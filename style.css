@@ -8,28 +8,28 @@
 
     /* paleta principal */
 
-    --color-primary:#1a120b;
+    --color-primary:#3d3b8f;
     --color-accent:#d4a373;
-    --color-surface:#fefae0;
+    --color-surface:#3e13b4;
 
-    /* fondos */
+    /* fondos coyotes*/
 
-    --bg-main:radial-gradient(circle at top,#2b1e15,#0e0805);
+    --bg-main:radial-gradient(circle at top,#bd4141,#412b8f);
 
     /* glass */
 
-    --glass-bg:rgba(26,18,11,0.75);
-    --glass-border:rgba(212,163,115,0.25);
+    --glass-bg: rgba(158, 68, 68, 0.95); /* <--- ESTA ES LA PROPIEDAD */
+    --glass-border: rgba(5, 7, 158, 0.65);
 
     /* textos */
 
-    --text-main:#fefae0;
-    --text-soft:#e6d8c3;
+    --text-main:#e1e0fe;
+    --text-soft:#c3e6ce;
 
     /* sombras */
 
-    --shadow-soft:0 10px 30px rgba(0,0,0,0.6);
-    --shadow-gold:0 0 20px rgba(212,163,115,0.35);
+    --shadow-soft:0 10px 30px rgba(199, 8, 8, 0.6);
+    --shadow-gold:0 0 20px rgba(221, 182, 52, 0.35);
 
     /* bordes */
 
@@ -235,8 +235,8 @@ main {
 }
 
 .tab-btn{
-    background:rgba(26,18,11,0.65);
-    border:1px solid rgba(212,163,115,0.2);
+    background:rgba(11, 26, 17, 0.65);
+    border:1px solid rgba(192, 85, 77,0.2);
     padding:10px 18px;
     border-radius:30px;
     cursor:pointer;
@@ -248,13 +248,13 @@ main {
 
 .tab-btn:hover{
     transform:translateY(-3px);
-    border-color:#d4a373;
-    box-shadow:0 4px 15px rgba(212,163,115,0.25);
+    border-color:#bd4141;
+    box-shadow:0 4px 15px rgba(62, 33, 194, 0.25);
 }
 
 .tab-btn.active{
-    background:linear-gradient(135deg,#d4a373,#e8c48c);
-    color:#1a120b;
+    background:linear-gradient(135deg,#bd4141,#e8c48c);
+    color:#3c0fb8;
     box-shadow:0 6px 20px rgba(212,163,115,0.4);
 }
 
@@ -279,17 +279,16 @@ main {
 
 /* Ajuste de la tarjeta para que sea compacta */
 .producto-card {
-    background: var(--glass-bg);
+    background: var(--glass-bg); /* Ahora usará el rgba(158, 68, 68, 0.95) de tu root */
     border-radius: var(--radius);
     backdrop-filter: blur(16px);
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow-soft);
     display: flex;
-    flex-direction: column; /* Asegura que el contenido vaya hacia abajo */
+    flex-direction: column;
     position: relative;
     overflow: hidden;
-    height: 100%; /* Para que todas midan lo mismo en la misma fila */
-
+    height: 100%;
 }
 
 .producto-card::before{
@@ -298,11 +297,11 @@ main {
     inset:0;
     border-radius:18px;
     padding:1px;
-    background:linear-gradient(120deg,#d4a373,#fff0d0,#d4a373);
+    background:linear-gradient(120deg,#4f35c0,#3e2ab3,#2b29a8);
     background-size:200%;
     -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
+    linear-gradient(#222dcf 0 0) content-box,
+    linear-gradient(#d41212 0 0);
     -webkit-mask-composite:xor;
     mask-composite:exclude;
     animation:goldBorder 5s linear infinite;
@@ -377,14 +376,14 @@ main {
 }
 
 .producto-nombre {
-    font-size: 0.9rem !important; /* Más pequeño para que quepa en 2 columnas */
-    line-height: 1.2;
-    margin-bottom: 5px;
+    color: var(--text-main) !important; /* El color lila claro #e1e0fe */
+    font-weight: 700;
 }
 
 .producto-precio {
-    font-size: 0.9rem !important;
-    margin-bottom: 8px !important;
+    color: #ffffff !important; /* Blanco puro para que resalte sobre el rojo */
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .ingredientes-seccion {
@@ -394,8 +393,8 @@ main {
 .btn-ingredientes{
     width:100%;
     padding:6px !important;
-    background:rgba(26,18,11,0.8);
-    color:#d4a373;
+    background:rgba(48, 61, 177, 0.8);
+    color:#ffff;
     border:1px solid rgba(212,163,115,0.35);
     border-radius:8px;
     cursor:pointer;
@@ -406,15 +405,15 @@ main {
 
 .btn-ingredientes:hover{
 
-    background:#d4a373;
+    background:#bd4141;
 
-    color:#1a120b;
+    color:#243cc5;
 
 }
 
 .ingredientes-lista{
-    background:rgba(20,12,8,0.95);
-    border-left:3px solid #d4a373;
+    background:rgba(44, 28, 216, 0.95);
+    border-left:3px solid #1f2aca;
     padding: 8px;
     border-radius:8px;
     margin-bottom:0.5rem;
@@ -452,21 +451,23 @@ main {
     }
 }
 
-.btn-agregar{
-    margin-top:auto !important;
-    padding: 8px !important;
-    border-radius:10px;
+.btn-agregar {
+    margin-top: auto !important;
+    padding: 10px !important;
+    border-radius: 10px;
     border: none;
-    background:#d4a373; /* amarillo transparente */
+    background: #bd4141; /* Rojo sólido para que resalte */
     color: white;
-    cursor:pointer;
+    font-weight: 700;
+    cursor: pointer;
     margin-bottom: 6px !important;
+    transition: all 0.3s ease;
 }
 
-.btn-agregar:hover{
-
-background:rgba(243,156,18,0.3);
-
+.btn-agregar:hover {
+    background: #e1e0fe; /* Cambia al lila claro de tus textos */
+    color: #3d3b8f; /* Letra morada al pasar el mouse */
+    transform: translateY(-2px);
 }
 
 .btn-agregar:active{
@@ -480,10 +481,10 @@ background:rgba(243,156,18,0.3);
         box-shadow: 0 0 0 0 rgba(192, 57, 43, 0.7);
     }
     70% {
-        box-shadow: 0 0 0 10px rgba(192, 57, 43, 0);
+        box-shadow: 0 0 0 10px rgba(189, 50, 35, 0);
     }
     100% {
-        box-shadow: 0 0 0 0 rgba(192, 57, 43, 0);
+        box-shadow: 0 0 0 0 rgba(212, 34, 14, 0);
     }
 }
 
@@ -538,7 +539,7 @@ background:rgba(243,156,18,0.3);
     z-index:2000;
 
     /* fondo oscuro */
-    background:rgba(165, 89, 66, 0.96);
+    background:rgba(207, 36, 36, 0.96);
 
     backdrop-filter:blur(14px);
 
@@ -606,7 +607,7 @@ padding:5px;
 
 .carrito-cerrar:hover{
 
-color:#f39c12;
+color:#b43232;
 
 }
 
@@ -656,7 +657,7 @@ color:#f39c12;
 
     border-radius:8px;
 
-    background:#f39c12;
+    background:#2e23ce;
     font-weight: 600;
     color:white;
 
@@ -665,7 +666,7 @@ color:#f39c12;
 }
 
 .carrito-vacio button{
-    background:#f39c12;
+    background:#2652e4;
 }
 
 .carrito-items {
@@ -685,11 +686,11 @@ color:#f39c12;
 .carrito-item-nombre {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--color-blanco);
+    color: #ffffff; /* Blanco */
 }
 
 .carrito-item-precio {
-    color: var(--color-dorado);
+    color: var(--text-soft) !important; /* El color verde suave/crema #c3e6ce */
     font-weight: 700;
     margin-bottom: 0.75rem;
 }
@@ -819,9 +820,9 @@ color:#f39c12;
 }
 
 .toggle-btn.active {
-    background: #f39c12;
+    background: #2812f3;
     color: white;
-    border-color: #f39c12;
+    border-color: #4352d8;
 }
 
 .form-group {
@@ -882,7 +883,7 @@ color:#f39c12;
     font-size: 1.05rem;
     cursor: pointer;
     letter-spacing: 0.02em;
-    box-shadow: 0 6px 20px rgba(192,57,43,0.4);
+    box-shadow: 0 6px 20px rgba(55, 194, 78, 0.4);
     transition: all 0.25s ease;
     font-family: var(--font-cuerpo);
     transition: all 0.3s ease;
@@ -1066,14 +1067,14 @@ select{
 
     outline:none;
 
-    border-color:#d4a373;
+    border-color:#c0554d;
 
     box-shadow:0 0 15px rgba(212,163,115,0.35);
 
 }
 .carrito-badge{
 
-    background:#d4a373;
+    background:#e6e6e9;
 
     color:#1a120b;
 
@@ -1160,7 +1161,7 @@ select{
 .carrito-scroll select:focus,
 .carrito-scroll textarea:focus{
 
-    border-color:#f39c12;
+    border-color:#3f48c4;
 
     box-shadow:0 0 6px rgba(243,156,18,0.5);
 
@@ -1209,8 +1210,8 @@ select{
 .btn-eliminar:focus,
 .btn-agregar:focus {
     outline: none;
-    background-color: var(--color-accent) !important;
-    color: var(--color-primary) !important;
+    background-color: #bd4141 !important; /* Mantiene el rojo */
+    color: white !important;
 }
 
 /* Si usas la animación de "Agregado" (verde), esto asegura que al terminar vuelva al naranja */

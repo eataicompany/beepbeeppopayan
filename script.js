@@ -12,71 +12,71 @@ const CONFIG = {
 
 const MENU = {
     salchipapas: [
-        { id: "S6", nombre: "¡Beep Beep!", precio: 24000, imagen: "salchipapa-beep.jpg", ingredientes: ["4 carnes", "maicitos", "salchicha", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S7", nombre: "Familiar", precio: 35000, imagen: "salchipapa-familiar.jpg", ingredientes: ["costilla", "carne desmechada", "chorizo", "tocineta", "carne de hamburguesa", "queso"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S8", nombre: "Mega Familiar", precio: 50000, imagen: "salchipapa-mega.jpg", ingredientes: ["costilla", "carne desmechada", "chorizo", "tocineta", "carne de hamburguesa", "maicitos", "maduro", "mucho queso"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S9", nombre: "Súper Especial", precio: 30000, imagen: "salchipapa-super.jpg", ingredientes: ["3 carnes", "costilla", "salchicha ranchera", "maduro", "maicitos", "huevo de codorniz", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S10", nombre: "Especial", precio: 18000, imagen: "salchipapa-especial.jpg", ingredientes: ["3 carnes", "salchicha", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S11", nombre: "Mixta", precio: 12000, imagen: "salchipapa-mixta.jpg", ingredientes: ["2 carnes", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S12", nombre: "Carne Desmechada", precio: 10000, imagen: "salchipapa-desmechada.jpg", ingredientes: ["carne desmechada", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S13", nombre: "Carne Hamburguesa", precio: 10000, imagen: "salchipapa-hamburguesa.jpg", ingredientes: ["carne hamburguesa", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S14", nombre: "Pollo", precio: 10000, imagen: "salchipapa-pollo.jpg", ingredientes: ["pollo", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S15", nombre: "Tocineta", precio: 10000, imagen: "salchipapa-tocineta.jpg", ingredientes: ["tocineta", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S16", nombre: "Chorizo", precio: 10000, imagen: "salchipapa-chorizo.jpg", ingredientes: ["chorizo", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
-        { id: "S17", nombre: "Sencilla", precio: 6000, imagen: "salchipapa-sencilla.jpg", ingredientes: ["papas", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" }
+        { id: "S6", nombre: "Salchipapa ¡Beep Beep!", precio: 24000, imagen: "salchipapa-beep.jpg", ingredientes: ["4 carnes", "maicitos", "salchicha", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S7", nombre: "Salchipapa Familiar", precio: 35000, imagen: "salchipapa-familiar.jpg", ingredientes: ["costilla", "carne desmechada", "chorizo", "tocineta", "carne de hamburguesa", "queso"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S8", nombre: "Salchipapa Mega Familiar", precio: 50000, imagen: "salchipapa-mega.jpg", ingredientes: ["costilla", "carne desmechada", "chorizo", "tocineta", "carne de hamburguesa", "maicitos", "maduro", "mucho queso"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S9", nombre: "Salchipapa Súper Especial", precio: 30000, imagen: "salchipapa-super.jpg", ingredientes: ["3 carnes", "costilla", "salchicha ranchera", "maduro", "maicitos", "huevo de codorniz", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S10", nombre: "Salchipapa Especial", precio: 18000, imagen: "salchipapa-especial.jpg", ingredientes: ["3 carnes", "salchicha", "queso", "salsas"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S11", nombre: "Salchipapa Mixta", precio: 12000, imagen: "salchipapa-mixta.jpg", ingredientes: ["2 carnes", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S12", nombre: "Salchipapa Carne Desmechada", precio: 10000, imagen: "salchipapa-desmechada.jpg", ingredientes: ["carne desmechada", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S13", nombre: "Salchipapa Carne Hamburguesa", precio: 10000, imagen: "salchipapa-hamburguesa.jpg", ingredientes: ["carne hamburguesa", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S14", nombre: "Salchipapa Pollo", precio: 10000, imagen: "salchipapa-pollo.jpg", ingredientes: ["pollo", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S15", nombre: "Salchipapa Tocineta", precio: 10000, imagen: "salchipapa-tocineta.jpg", ingredientes: ["tocineta", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S16", nombre: "Salchipapa Chorizo", precio: 10000, imagen: "salchipapa-chorizo.jpg", ingredientes: ["chorizo", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" },
+        { id: "S17", nombre: "Salchipapa Sencilla", precio: 6000, imagen: "salchipapa-sencilla.jpg", ingredientes: ["papas", "salchicha", "queso", "salsa"], emoji: "🍟", categoria: "SALCHIPAPA 🍟" }
     ],
     hamburguesas: [
-        { id: "H1", nombre: "¡Beep Beep!", precio: 19000, imagen: "hamburguesa-beep.jpg", ingredientes: ["filete de pollo", "tocineta", "cordero", "cebolla", "piña", "jamón", "queso", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
+        { id: "H1", nombre: "Hamburguesa ¡Beep Beep!", precio: 19000, imagen: "hamburguesa-beep.jpg", ingredientes: ["filete de pollo", "tocineta", "cordero", "cebolla", "piña", "jamón", "queso", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
         { id: "H2", nombre: "Patacón Burger", precio: 16000, imagen: "hamburguesa-patacon.jpg", ingredientes: ["tocineta", "pollo", "carne de hamburguesa", "cebolla", "piña", "doble queso", "jamón", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
-        { id: "H3", nombre: "Doble Carne", precio: 17000, imagen: "hamburguesa-doble.jpg", ingredientes: ["pollo", "cebolla", "jamón", "queso", "piña", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
-        { id: "H4", nombre: "Especial", precio: 15000, imagen: "hamburguesa-especial.jpg", ingredientes: ["pollo", "tocineta", "cebolla", "jamón", "piña", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
-        { id: "H5", nombre: "Combo", precio: 12000, imagen: "hamburguesa-combo.jpg", ingredientes: ["hamburguesa sencilla", "papas a la francesa", "vaso gaseosa"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
-        { id: "H6", nombre: "Sencilla", precio: 8000, imagen: "hamburguesa-sencilla.jpg", ingredientes: ["cebolla", "piña", "queso", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" }
+        { id: "H3", nombre: "Hamburguesa Doble Carne", precio: 17000, imagen: "hamburguesa-doble.jpg", ingredientes: ["pollo", "cebolla", "jamón", "queso", "piña", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
+        { id: "H4", nombre: "Hamburguesa Especial", precio: 15000, imagen: "hamburguesa-especial.jpg", ingredientes: ["pollo", "tocineta", "cebolla", "jamón", "piña", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
+        { id: "H5", nombre: "Combo Hamburguesa", precio: 12000, imagen: "hamburguesa-combo.jpg", ingredientes: ["hamburguesa sencilla", "papas a la francesa", "vaso gaseosa"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" },
+        { id: "H6", nombre: "Hamburguesa Sencilla", precio: 8000, imagen: "hamburguesa-sencilla.jpg", ingredientes: ["cebolla", "piña", "queso", "lechuga", "tomate", "salsas"], emoji: "🍔", categoria: "HAMBURGUESA 🍔" }
     ],
     perros: [
-        { id: "P1", nombre: "¡Beep Beep!", precio: 15000, imagen: "perro-beep.jpg", ingredientes: ["salchicha tipo ranchera", "pollo", "jamón de cordero", "queso", "tocineta", "piña", "cebolla", "ripio", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
-        { id: "P2", nombre: "Especial", precio: 13000, imagen: "perro-especial.jpg", ingredientes: ["salchicha tipo ranchera", "queso", "pollo", "tocineta", "piña", "cebolla", "ripio", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
-        { id: "P3", nombre: "Combo", precio: 12000, imagen: "perro-combo.jpg", ingredientes: ["perro sencillo", "papas a la francesa", "vaso gaseosa"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
-        { id: "P4", nombre: "Sencillo", precio: 8000, imagen: "perro-sencillo.jpg", ingredientes: ["salchicha", "cebolla", "piña", "queso", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" }
+        { id: "P1", nombre: "Perro ¡Beep Beep!", precio: 15000, imagen: "perro-beep.jpg", ingredientes: ["salchicha tipo ranchera", "pollo", "jamón de cordero", "queso", "tocineta", "piña", "cebolla", "ripio", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
+        { id: "P2", nombre: "Perro Especial", precio: 13000, imagen: "perro-especial.jpg", ingredientes: ["salchicha tipo ranchera", "queso", "pollo", "tocineta", "piña", "cebolla", "ripio", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
+        { id: "P3", nombre: "Combo Perro", precio: 12000, imagen: "perro-combo.jpg", ingredientes: ["perro sencillo", "papas a la francesa", "vaso gaseosa"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" },
+        { id: "P4", nombre: "Perro Sencillo", precio: 8000, imagen: "perro-sencillo.jpg", ingredientes: ["salchicha", "cebolla", "piña", "queso", "salsas"], emoji: "🌭", categoria: "PERRO CALIENTE 🌭" }
     ],
     sandwiches: [
-        { id: "S1", nombre: "¡Beep Beep!", precio: 19000, imagen: "sandwich-beep.jpg", ingredientes: ["tocineta", "cordero", "jamón", "queso", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
-        { id: "S2", nombre: "Cordero", precio: 15000, imagen: "sandwich-cordero.jpg", ingredientes: ["cordero", "tocineta", "jamón", "queso", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
-        { id: "S3", nombre: "Pollo", precio: 15000, imagen: "sandwich-pollo.jpg", ingredientes: ["pollo", "jamón", "queso", "piña", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
-        { id: "S4", nombre: "Jamón Tocineta", precio: 11000, imagen: "sandwich-jamon.jpg", ingredientes: ["jamón", "queso", "tocineta", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
-        { id: "S5", nombre: "Hawaiano", precio: 10000, imagen: "sandwich-hawaiano.jpg", ingredientes: ["hamburguesa sencilla", "papas a la francesa", "vaso gaseosa"], emoji: "🥪", categoria: "SANDWICH 🥪" }
+        { id: "S1", nombre: "Sandwich ¡Beep Beep!", precio: 19000, imagen: "sandwich-beep.jpg", ingredientes: ["tocineta", "cordero", "jamón", "queso", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
+        { id: "S2", nombre: "Sandwich Cordero", precio: 15000, imagen: "sandwich-cordero.jpg", ingredientes: ["cordero", "tocineta", "jamón", "queso", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
+        { id: "S3", nombre: "Sandwich Pollo", precio: 15000, imagen: "sandwich-pollo.jpg", ingredientes: ["pollo", "jamón", "queso", "piña", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
+        { id: "S4", nombre: "Sandwich Jamón Tocineta", precio: 11000, imagen: "sandwich-jamon.jpg", ingredientes: ["jamón", "queso", "tocineta", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" },
+        { id: "S5", nombre: "Sandwich Hawaiano", precio: 10000, imagen: "sandwich-hawaiano.jpg", ingredientes: ["jamón", "queso", "piña", "lechuga", "tomate"], emoji: "🥪", categoria: "SANDWICH 🥪" }
     ],
     puntas: [
-        { id: "P5", nombre: "Pollo", precio: 6000, imagen: "puntas-pollo.jpg", ingredientes: ["puntas de pollo"], emoji: "🌮", categoria: "PUNTAS 🌮" },
-        { id: "P6", nombre: "Hawaianas", precio: 5000, imagen: "puntas-hawaianas.jpg", ingredientes: ["puntas hawaianas"], emoji: "🌮", categoria: "PUNTAS 🌮" },
-        { id: "P7", nombre: "Cubanas", precio: 5000, imagen: "puntas-cubanas.jpg", ingredientes: ["puntas cubanas"], emoji: "🌮", categoria: "PUNTAS 🌮" }
+        { id: "P5", nombre: "Puntas de Pollo", precio: 6000, imagen: "puntas-pollo.jpg", ingredientes: ["puntas de pollo"], emoji: "🌮", categoria: "PUNTAS 🌮" },
+        { id: "P6", nombre: "Puntas Hawaianas", precio: 5000, imagen: "puntas-hawaianas.jpg", ingredientes: ["puntas hawaianas"], emoji: "🌮", categoria: "PUNTAS 🌮" },
+        { id: "P7", nombre: "Puntas Cubanas", precio: 5000, imagen: "puntas-cubanas.jpg", ingredientes: ["puntas cubanas"], emoji: "🌮", categoria: "PUNTAS 🌮" }
     ],
     pizza: [
         { id: "P9", nombre: "Combo Pizza", precio: 12000, imagen: "pizza-combo.jpg", ingredientes: ["pizza combinada con variedad de ingredientes"], emoji: "🍕", categoria: "PIZZA 🍕" },
-        { id: "P10", nombre: "Mixta", precio: 11000, imagen: "pizza-mixta.jpg", ingredientes: ["pizza con ingredientes mixtos"], emoji: "🍕", categoria: "PIZZA 🍕" },
-        { id: "P11", nombre: "Pollo-Champiñones", precio: 11000, imagen: "pizza-pollo.jpg", ingredientes: ["pollo y champiñones"], emoji: "🍕", categoria: "PIZZA 🍕" },
-        { id: "P12", nombre: "Hawaiana", precio: 8000, imagen: "pizza-hawaiana.jpg", ingredientes: ["jamón y piña"], emoji: "🍕", categoria: "PIZZA 🍕" },
-        { id: "P13", nombre: "Peperoni", precio: 8000, imagen: "pizza-peperoni.jpg", ingredientes: ["peperoni clásico"], emoji: "🍕", categoria: "PIZZA 🍕" }
+        { id: "P10", nombre: "Pizza Mixta", precio: 11000, imagen: "pizza-mixta.jpg", ingredientes: ["pizza con ingredientes mixtos"], emoji: "🍕", categoria: "PIZZA 🍕" },
+        { id: "P11", nombre: "Pizza Pollo-Champiñones", precio: 11000, imagen: "pizza-pollo.jpg", ingredientes: ["pollo y champiñones"], emoji: "🍕", categoria: "PIZZA 🍕" },
+        { id: "P12", nombre: "Pizza Hawaiana", precio: 8000, imagen: "pizza-hawaiana.jpg", ingredientes: ["jamón y piña"], emoji: "🍕", categoria: "PIZZA 🍕" },
+        { id: "P13", nombre: "Pizza Peperoni", precio: 8000, imagen: "pizza-peperoni.jpg", ingredientes: ["peperoni clásico"], emoji: "🍕", categoria: "PIZZA 🍕" }
     ],
     patacon: [
-        { id: "P8", nombre: "Con Todo", precio: 15000, imagen: "patacon-todo.jpg", ingredientes: ["patacón", "carne de hamburguesa", "tomate", "pollo", "tocineta", "queso", "salsas"], emoji: "🍌", categoria: "PATACÓN 🍌" }
+        { id: "P8", nombre: "Patacón Con Todo", precio: 15000, imagen: "patacon-todo.jpg", ingredientes: ["patacón", "carne de hamburguesa", "tomate", "pollo", "tocineta", "queso", "salsas"], emoji: "🍌", categoria: "PATACÓN 🍌" }
     ],
     pollo_apanado: [
-        { id: "A1", nombre: "Pollo Entero", precio: 36000, imagen: "pollo-entero.jpg", ingredientes: ["Pollo apanado entero"], emoji: "🍗", categoria: "POLLO APANADO 🍗" },
-        { id: "A2", nombre: "Medio Pollo", precio: 18000, imagen: "pollo-medio.jpg", ingredientes: ["Medio pollo apanado"], emoji: "🍗", categoria: "POLLO APANADO 🍗" },
-        { id: "A3", nombre: "Cuarto de Pollo", precio: 9000, imagen: "pollo-cuarto.jpg", ingredientes: ["Cuarto de pollo apanado"], emoji: "🍗", categoria: "POLLO APANADO 🍗" }
+        { id: "A1", nombre: "Pollo Entero Apanado", precio: 36000, imagen: "pollo-entero.jpg", ingredientes: ["Pollo apanado entero"], emoji: "🍗", categoria: "POLLO APANADO 🍗" },
+        { id: "A2", nombre: "Medio Pollo Apanado", precio: 18000, imagen: "pollo-medio.jpg", ingredientes: ["Medio pollo apanado"], emoji: "🍗", categoria: "POLLO APANADO 🍗" },
+        { id: "A3", nombre: "Cuarto de Pollo Apanado", precio: 9000, imagen: "pollo-cuarto.jpg", ingredientes: ["Cuarto de pollo apanado"], emoji: "🍗", categoria: "POLLO APANADO 🍗" }
     ],
     al_carbon: [
-        { id: "C1", nombre: "Lomo de Res", precio: 15000, imagen: "carbon-res.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
-        { id: "C2", nombre: "Lomo de Cerdo", precio: 15000, imagen: "carbon-cerdo.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
-        { id: "C3", nombre: "Filete de Pollo", precio: 15000, imagen: "carbon-pollo.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
-        { id: "C4", nombre: "Pechuga Gratinada", precio: 17000, imagen: "carbon-pechuga.jpg", ingredientes: ["pechuga gratinada", "papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" }
+        { id: "C1", nombre: "Lomo de Res al Carbón", precio: 15000, imagen: "carbon-res.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
+        { id: "C2", nombre: "Lomo de Cerdo al Carbón", precio: 15000, imagen: "carbon-cerdo.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
+        { id: "C3", nombre: "Filete de Pollo al Carbón", precio: 15000, imagen: "carbon-pollo.jpg", ingredientes: ["carne con papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" },
+        { id: "C4", nombre: "Pechuga Gratinada al Carbón", precio: 17000, imagen: "carbon-pechuga.jpg", ingredientes: ["pechuga gratinada", "papas", "ensalada"], emoji: "🔥", categoria: "AL CARBÓN 🔥" }
     ],
     adiciones: [
-        { id: "P14", nombre: "Carne Hamburguesa", precio: 5000, imagen: "adicion-carne.jpg", ingredientes: ["porción adicional de carne"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
-        { id: "P15", nombre: "Papa", precio: 4000, imagen: "adicion-papa.jpg", ingredientes: ["porción adicional de papas"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
-        { id: "P16", nombre: "Tocineta", precio: 4000, imagen: "adicion-tocineta.jpg", ingredientes: ["porción adicional de tocineta"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
-        { id: "P17", nombre: "Pollo", precio: 4000, imagen: "adicion-pollo.jpg", ingredientes: ["porción adicional de pollo"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" }
+        { id: "P14", nombre: "Adición Carne Hamburguesa", precio: 5000, imagen: "adicion-carne.jpg", ingredientes: ["porción adicional de carne"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
+        { id: "P15", nombre: "Adición Papa", precio: 4000, imagen: "adicion-papa.jpg", ingredientes: ["porción adicional de papas"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
+        { id: "P16", nombre: "Adición Tocineta", precio: 4000, imagen: "adicion-tocineta.jpg", ingredientes: ["porción adicional de tocineta"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
+        { id: "P17", nombre: "Adición Pollo", precio: 4000, imagen: "adicion-pollo.jpg", ingredientes: ["porción adicional de pollo"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" }
     ]
 };
 

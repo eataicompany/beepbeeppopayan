@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beep Bepp Popayán - Comidas Rápidas</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM35ZVLQ8W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HM35ZVLQ8W');
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="htt...ap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="top-bar">
+        <header class="header-bar">
+            <div class="header-logo">
+            <img src="images/logo.jpeg" alt="Beep Bepp Popayán">
+            </div>
+            <div class="tabs-container" id="tabsContainer"></div>
+        </header>
+        <!-- Estado pequeño debajo -->
+        <div class="header-status" id="statusHorario">
+            <span id="statusEmoji">🟢</span>
+            <span id="statusTexto">Abierto</span>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1 class="titulo-principal">Nuestro Menú</h1>
+
+        <!-- GRID DE PRODUCTOS -->
+        <div class="productos-grid" id="productosGrid"></div>
+    </main>
+
+    <!-- CARRITO FLOTANTE -->
+    <button class="carrito-btn" id="carritoBtn">
+        🛒
+        <div class="carrito-badge" id="carritoBadge">0</carritoBadge>
+    </button>
+
+    <!-- DRAWER DEL CARRITO -->
+    <div class="carrito-drawer" id="carritoDrawer">
+        <div class="carrito-header">
+            <h2 class="carrito-titulo">TU PEDIDO</h2>
+
+            <div style="display:flex; gap:10px;">
+                <button class="carrito-cerrar" id="carritoClose">✕</button>
+            </div>
+        </div>
+
+        <!-- ZONA SCROLLEABLE ÚNICA -->
+        <div class="carrito-scroll">
+            <div id="carritoContenido"></div>
+        </div>
+
+        <!-- BOTÓN PEDIR YA (FUERA DEL SCROLL) -->
+        <button class="btn-pedir oculto" id="btnPedir">Pedir a Toscano</button>
+    </div>
+
+    <!-- OVERLAY DEL DRAWER -->
+    <div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 150; display: none;" onclick="cerrarCarrito()"></div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modalCerrado">
+        <div class="modal-contenido">
+            <div class="modal-titulo">⏰ Estamos Cerrados</div>
+            <div class="modal-texto">Tu pedido será atendido cuando abramos a las 05pm. ¿Enviar de todas formas?</div>
+            <div class="modal-botones">
+                <button class="modal-btn modal-btn-cancelar" id="modalCancelar">Cancelar</button>
+                <button class="modal-btn modal-btn-confirmar" id="modalConfirmar">Sí, enviar igual</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+<footer>
+    <div class="footer-logo-container">
+        <img src="images/logo.jpeg" alt="Beep Bepp Popayán" class="footer-logo-img">
+    </div>
+
+    <div class="footer-socials" style="display: flex; gap: 20px; justify-content: center; margin-top: 0; margin-bottom: 0.3rem; font-size: 1.5rem;">
+        <a href="https://www.facebook.com/" target="_blank" class="social-link" title="Síguenos en Facebook" style="text-decoration: none; color: inherit; transition: color 0.2s ease;">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link" title="Síguenos en Instagram" style="text-decoration: none; color: inherit; transition: color 0.2s ease;">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank" class="social-link" title="Síguenos en TikTok" style="text-decoration: none; color: inherit; transition: color 0.2s ease;">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </div>
+
+    <p style="margin-top: 0; font-size: 0.9rem; line-height: 1.6;">
+        Desarrollado por 
+        <a href="https://eataicompany.github.io/eataicompany/" target="_blank" class="footer-link">🚀 EatAi</a>
+        | 
+        <a href="https://wa.me/573217054190" target="_blank" class="footer-link">📞 321 705 4190</a>
+    </p>
+
+    <p style="font-size: 0.8rem; color: var(--color-gris-claro); margin-top: 0.3rem;">
+        © 2026 Beep Bepp Popayán. Todos los derechos reservados.
+    </p>
+
+    <p style="font-size: 0.8rem; color: var(--color-gris-claro); margin-top: 0.5rem;">
+        Todos los precios incluyen IVA. Imágenes ilustrativas.
+    </p>
+</footer>
+
+    <!-- JAVASCRIPT -->
+<script src="script.js"></script>
+</body>
+</html>

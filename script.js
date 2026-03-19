@@ -79,7 +79,6 @@ const MENU = {
         { id: "P17", nombre: "Adición Pollo", precio: 4000, imagen: "adicion-pollo.jpg", ingredientes: ["porción adicional de pollo"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" }
     ]
 };
-
 // ═══════════════════════════════════════════════════════════════
 // ESTADO GLOBAL
 // ═══════════════════════════════════════════════════════════════
@@ -224,45 +223,75 @@ function renderizarMenu() {
 
 function seleccionarCategoria(categoriaId, categorias) {
     const categoria = categorias.find(c => c.id === categoriaId);
-    if (!categoria || !categoria.items) return;
+    if (!categoria) return;
 
+    // Actualizar tabs activos
     document.querySelectorAll(".tab-btn").forEach((btn) => {
         btn.classList.toggle("active", btn.innerHTML.includes(categoria.nombre));
     });
 
     productosGrid.innerHTML = "";
+    
+    // Ordenar productos de menor a mayor precio
     const itemsOrdenados = [...categoria.items].sort((a, b) => a.precio - b.precio);
 
     itemsOrdenados.forEach(producto => {
         const card = document.createElement("div");
         card.className = "producto-card";
         
-        // ⚠️ ESTA ES LA LÓGICA CLAVE:
-        // Si el producto tiene imagen definida en el MENU, la usa. 
-        // Si no (o mientras las subes), usa el logo.jpeg por defecto.
+        // ═══════════════════════════════════════════════════════════════
+        // LÓGICA DE LIMPIEZA VISUAL (Para la tarjeta)
+        // ═══════════════════════════════════════════════════════════════
+        
+        // 1. Definimos qué palabras queremos quitar de la vista
+        const palabrasAQuitar = ["salchipapa", "hamburguesa", "perro", "sandwich", "pizza", "adición", "puntas"];
+        
+        let nombreParaMostrar = producto.nombre;
+
+        // 2. Buscamos y removemos la palabra si existe (sin importar mayúsculas)
+        palabrasAQuitar.forEach(palabra => {
+            const regex = new RegExp(palabra, "gi"); // "gi" significa global e ignora mayúsculas
+            nombreParaMostrar = nombreParaMostrar.replace(regex, "");
+        });
+
+        // 3. Limpiamos espacios sobrantes y aseguramos que la primera letra sea Mayúscula
+        nombreParaMostrar = nombreParaMostrar.trim();
+        nombreParaMostrar = nombreParaMostrar.charAt(0).toUpperCase() + nombreParaMostrar.slice(1);
+        
+        // ═══════════════════════════════════════════════════════════════
+
+        // Imagen con seguro de error
         const rutaImagen = producto.imagen ? `images/${producto.imagen}` : "images/logo.jpeg";
 
         card.innerHTML = `
-            <img class="producto-imagen" src="${rutaImagen}" alt="${producto.nombre}" onerror="this.src='images/logo.jpeg'">
+            <img class="producto-imagen" 
+                 src="${rutaImagen}" 
+                 alt="${producto.nombre}" 
+                 onerror="this.src='images/logo.jpeg'">
             
             <div class="producto-contenido">
                 <div class="producto-header">
                     <span class="producto-emoji">${producto.emoji}</span>
-                    <span class="producto-nombre">${producto.nombre}</span>
+                    <span class="producto-nombre">${nombreParaMostrar}</span> 
                 </div>
                 <div class="producto-precio">${formatearPrecio(producto.precio)}</div>
+                
                 <div class="ingredientes-seccion">
                     <button class="btn-ingredientes" onclick="toggleIngredientes(this)">👁 Ver ingredientes</button>
                     <div class="ingredientes-lista">
                         <strong>Ingredientes:</strong><br>${producto.ingredientes.join(", ")}
                     </div>
                 </div>
-                <button class="btn-agregar" onclick="agregarAlCarrito('${producto.id}', '${producto.nombre}', ${producto.precio})">Pedir +</button>
+
+                <button class="btn-agregar" onclick="agregarAlCarrito('${producto.id}', '${producto.nombre}', ${producto.precio})">
+                    Pedir +
+                </button>
             </div>
         `;
         productosGrid.appendChild(card);
     });
 
+    // Desplazamiento suave al inicio
     productosGrid.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 

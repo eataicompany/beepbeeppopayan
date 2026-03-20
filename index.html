@@ -77,7 +77,7 @@
     <!-- OVERLAY DEL DRAWER -->
     <div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 150; display: none;" onclick="cerrarCarrito()"></div>
 
-    <!-- MODAL -->
+    <!-- MODAL CERRADO -->
     <div class="modal" id="modalCerrado">
         <div class="modal-contenido">
             <div class="modal-titulo">⏰ Estamos Cerrados</div>
@@ -85,6 +85,23 @@
             <div class="modal-botones">
                 <button class="modal-btn modal-btn-cancelar" id="modalCancelar">Cancelar</button>
                 <button class="modal-btn modal-btn-confirmar" id="modalConfirmar">Sí, enviar igual</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE TURNOS (Pre-WhatsApp) -->
+    <div class="modal" id="modalTurnos">
+        <div class="modal-contenido">
+            <div class="modal-titulo">⏱️ Turnos por orden de llegada</div>
+            <div class="modal-texto">
+                ¡Gracias por tu pedido!<br><br>
+                Trabajamos con sistema de turnos para garantizar la mejor calidad.<br>
+                Te contactaremos por WhatsApp para confirmar tu pedido.<br><br>
+                Por favor, ten un poquito de paciencia 🫶
+            </div>
+            <div class="modal-botones">
+                <button class="modal-btn modal-btn-cancelar" id="modalTurnosCancelar">Cancelar pedido</button>
+                <button class="modal-btn modal-btn-confirmar" id="modalTurnosConfirmar">Sí, esperaré</button>
             </div>
         </div>
     </div>

@@ -77,6 +77,18 @@ const MENU = {
         { id: "P15", nombre: "Adición Papa", precio: 4000, imagen: "adicion-papa.jpg", ingredientes: ["porción adicional de papas"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
         { id: "P16", nombre: "Adición Tocineta", precio: 4000, imagen: "adicion-tocineta.jpg", ingredientes: ["porción adicional de tocineta"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" },
         { id: "P17", nombre: "Adición Pollo", precio: 4000, imagen: "adicion-pollo.jpg", ingredientes: ["porción adicional de pollo"], emoji: "➕", categoria: "PORCIÓN ADICIONES ➕" }
+    ],
+    bebidas: [
+        { id: "B1", nombre: "Bebida Jugo en agua", precio: 5000, imagen: "jugo-agua.jpg", ingredientes: ["Sabor a elección", "+$500 envase para llevar"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B2", nombre: "Bebida Jugo en leche", precio: 6000, imagen: "jugo-leche.jpg", ingredientes: ["Sabor a elección", "+$500 envase para llevar"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B3", nombre: "Bebida Cocacola personal", precio: 3000, imagen: "cocacola-personal.jpg", ingredientes: ["Original o Sin Azúcar"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B4", nombre: "Bebida Cocacola litro y medio", precio: 7000, imagen: "cocacola-grande.jpg", ingredientes: ["Para compartir"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B5", nombre: "Bebida Postobón litro y medio", precio: 5000, imagen: "postobon-grande.jpg", ingredientes: ["Sabor a elección"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B6", nombre: "Bebida Econolitro", precio: 5000, imagen: "econolitro.jpg", ingredientes: ["Económico para compartir"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B7", nombre: "Bebida Milo Frío o Caliente", precio: 7000, imagen: "milo.jpg", ingredientes: ["Energía para el día"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B8", nombre: "Bebida Hit en caja", precio: 5000, imagen: "hit-caja.jpg", ingredientes: ["Sabor a elección"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B9", nombre: "Bebida Hit personal", precio: 3000, imagen: "hit-personal.jpg", ingredientes: ["Sabor a elección"], emoji: "🥤", categoria: "BEBIDAS 🥤" },
+        { id: "B10", nombre: "Bebida Lata Cerveza", precio: 4000, imagen: "cerveza.jpg", ingredientes: ["Marca según disponibilidad"], emoji: "🍺", categoria: "BEBIDAS 🥤" }
     ]
 };
 // ═══════════════════════════════════════════════════════════════
@@ -202,7 +214,8 @@ function renderizarMenu() {
         { id: "patacon", nombre: "Patacón", emoji: "🍌", items: MENU.patacon },
         { id: "pollo_apanado", nombre: "Pollo Apanado", emoji: "🍗", items: MENU.pollo_apanado },
         { id: "al_carbon", nombre: "Al Carbón", emoji: "🔥", items: MENU.al_carbon },
-        { id: "adiciones", nombre: "Adiciones", emoji: "➕", items: MENU.adiciones }
+        { id: "adiciones", nombre: "Adiciones", emoji: "➕", items: MENU.adiciones },
+        { id: "bebidas", nombre: "Bebidas", emoji: "🥤", items: MENU.bebidas }
     ];
 
     // 2. Renderizar las pestañas (Tabs)
@@ -244,7 +257,7 @@ function seleccionarCategoria(categoriaId, categorias) {
         // ═══════════════════════════════════════════════════════════════
         
         // 1. Definimos qué palabras queremos quitar de la vista
-        const palabrasAQuitar = ["salchipapa", "hamburguesa", "perro", "sandwich", "pizza", "adición", "puntas"];
+        const palabrasAQuitar = ["salchipapa", "hamburguesa", "perro", "sandwich", "pizza", "adición", "puntas", "bebida"];
         
         let nombreParaMostrar = producto.nombre;
 

@@ -4,7 +4,7 @@
 
 const CONFIG = {
     negocio: "Beep Bepp Popayán",
-    whatsapp: "573182699048",
+    whatsapp: "573104209977",
     //sedes: ["La Sombrilla", "Lomas de Granada", "Obando"],
     metodosPago: ["💳 Por nequi", "💵 En efectivo", "🔑 Por Bre-B"],
     horario: { abre: 17, cierra: 1 }

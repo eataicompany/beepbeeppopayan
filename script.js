@@ -4,18 +4,10 @@
 
 const CONFIG = {
     negocio: "Beep Bepp Popayán",
-<<<<<<< HEAD
-<<<<<<< HEAD
     whatsapp: "573104209977",
-=======
-    whatsapp: "573145476668",
->>>>>>> myphone
-=======
-    whatsapp: "573104209977",
->>>>>>> myphone
     //sedes: ["La Sombrilla", "Lomas de Granada", "Obando"],
     metodosPago: ["💳 Por nequi", "💵 En efectivo", "🔑 Por Bre-B"],
-    horario: { abre: 17, cierra: 1 }
+    horario: { abre: 19, cierra: 1 }
 };
 
 const MENU = {
@@ -650,12 +642,15 @@ function validarFormulario() {
     return true;
 }
 
-function enviarPedidoWhatsApp() {
+function enviarPedidoWhatsApp() {   
     gtag('event', 'click_pedir', {
         event_category: 'pedido',
         event_label: 'Boton Pedir Toscano'
     });
-    if (!validarFormulario()) return;
+    
+    if (!validarFormulario()) {
+        return;
+    }
 
     if (!estaAbierto()) {
         intentarEnviarCerrado = true;
@@ -664,7 +659,15 @@ function enviarPedidoWhatsApp() {
         return;
     }
 
-    generarYEnviarMensaje();
+    // Abrir modal de turnos antes de enviar
+    const modalTurnos = document.getElementById("modalTurnos");
+    
+    if (modalTurnos) {
+        modalTurnos.classList.add("visible");
+    } else {
+        // Fallback: enviar directamente si no hay modal
+        generarYEnviarMensaje();
+    }
 }
 
 // Agrega esta función que no existía
@@ -753,15 +756,41 @@ function generarYEnviarMensaje() {
 carritoBtn.addEventListener("click", abrirCarrito);
 carritoClose.addEventListener("click", cerrarCarrito);
 btnPedir.addEventListener("click", enviarPedidoWhatsApp);
+
+
+
 modalCancelar.addEventListener("click", () => {
     intentarEnviarCerrado = false;
     modalCerrado.classList.remove("visible");
     abrirCarrito();
 });
+
 modalConfirmar.addEventListener("click", () => {
     modalCerrado.classList.remove("visible");
     generarYEnviarMensaje();
 });
+
+// MODAL DE TURNOS - Event Listeners
+const modalTurnos = document.getElementById("modalTurnos");
+const modalTurnosConfirmar = document.getElementById("modalTurnosConfirmar");
+const modalTurnosCancelar = document.getElementById("modalTurnosCancelar");
+
+if (modalTurnosConfirmar) {
+    modalTurnosConfirmar.addEventListener("click", () => {
+        console.log("✅ Click en Sí, esperaré");
+        if (modalTurnos) modalTurnos.classList.remove("visible");
+        generarYEnviarMensaje();
+    });
+}
+
+if (modalTurnosCancelar) {
+    modalTurnosCancelar.addEventListener("click", () => {
+        console.log("❌ Click en Cancelar pedido");
+        if (modalTurnos) modalTurnos.classList.remove("visible");
+        abrirCarrito();
+    });
+}
+
 
 // ═══════════════════════════════════════════════════════════════
 // INICIALIZACIÓN

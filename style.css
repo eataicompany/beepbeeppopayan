@@ -244,6 +244,9 @@ main {
     transition:all 0.3s ease;
     backdrop-filter:blur(8px);
     white-space:nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
 }
 
 .tab-btn:hover{

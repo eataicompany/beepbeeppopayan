@@ -7,7 +7,7 @@ const CONFIG = {
     whatsapp: "573104209977",
     //sedes: ["La Sombrilla", "Lomas de Granada", "Obando"],
     metodosPago: ["💳 Por nequi", "💵 En efectivo", "🔑 Por Bre-B"],
-    horario: { abre: 19, cierra: 1 }
+    horario: { abre: 17, cierra: 1 }
 };
 
 const MENU = {
@@ -167,7 +167,7 @@ function actualizarEstadoHorario() {
 
     if (abierto) {
         emoji.textContent = "🟢";
-        texto.textContent = "Abierto ahora";
+        texto.textContent = "Abierto ahora - ¡Te esperamos!";
         status.classList.remove("cerrado");
         status.classList.add("abierto");
     } else {
